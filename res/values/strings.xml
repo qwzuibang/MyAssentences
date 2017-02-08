@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机管家</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_logo">LogoActivity</string>
+
+    <string-array name="text_main_menu">
+        <item>手机加速</item>
+        <item>软件管理</item>
+        <item>手机检测</item>
+        <item>通讯大全</item>
+        <item>文件管理</item>
+        <item>垃圾清理</item>
+    </string-array>
+
+    <string name="title_activity_db">DBActivity</string>
+    <string name="title_activity_tel_mgr">TelMgrActivity</string>
+    <string name="title_activity_file_mgr">FileMgrActivity</string>
+
+    <string-array name="file_mgr_type_list">
+        <item>全部</item>
+        <item>文档</item>
+        <item>视频</item>
+        <item>音频</item>
+        <item>图像</item>
+        <item>压缩包</item>
+        <item>程序包</item>
+    </string-array>
+
+    <string name="title_activity_file_detail">FileDetailActivity</string>
+    <string name="title_activity_clean">CleanActivity</string>
+
+    <string-array name="clean_edl_group">
+        <item>手机缓存垃圾</item>
+        <item>手机内存垃圾</item>
+        <item>SD卡缓存垃圾</item>
+        <item>SD卡内存垃圾</item>
+    </string-array>
+<string-array name="setting_item">
+        <item>开机启动</item>
+        <item>通知图标</item>
+        <item>消息推送</item>
+        <item>帮助说明</item>
+        <item>意见反馈</item>
+        <item>好友分享</item>
+        <item>版本更新</item>
+        <item>关于我们</item>
+        
+    </string-array>
+    <string name="title_activity_soft_manager">SoftManagerActivity</string>
+    <string name="title_activity_sft_app">SftAppActivity</string>
+    <string name="title_activity_speed">SpeedActivity</string>
+    <string name="title_activity_decetion">DecetionActivity</string>
+    <string name="title_activity_tel_info">TelInfoActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>

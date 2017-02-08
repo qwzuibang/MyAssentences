@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context="com.zxkj.assitance.main.MainActivity"
+     android:orientation="vertical"
+     >
+     <!-- 标题栏 -->
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/title_bar"
+    />
+   <!-- 圆 -->
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       
+       >
+       <com.zxkj.assitance.view.CricleView         
+           android:id="@+id/cricle_arc_center"
+           android:layout_width="230dp"
+           android:layout_height="230dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+           />     
+            <ImageView 
+           android:id="@+id/cricle_image_main"
+          android:layout_width="220dp"
+          android:layout_height="220dp"
+         android:layout_centerInParent="true"
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/home_score_normal_bg"
+                />   
+                <TextView 
+                    android:id="@+id/text_main_cricle_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textSize="60dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"  
+                    android:paddingBottom="20dp"
+                    />
+                <TextView 
+                     android:id="@+id/text_main_cricle_per"
+                    android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                    android:text="%"
+                    android:layout_toRightOf="@+id/text_main_cricle_num"
+                    android:layout_alignBottom="@+id/text_main_cricle_num"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="30dp"     
+                    />
+                
+                <TextView 
+                    android:id="@+id/text_main_cricle_speed"
+                    android:layout_width="wrap_content"     
+                 android:layout_height="wrap_content"                       
+                    android:text="手机加速"        
+                    android:layout_below="@+id/text_main_cricle_num"         
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/text_main_menu_cricle_shape"
+                  android:textColor="#ffffff"
+                  android:layout_centerInParent="true"  
+                  
+                    />
+       </RelativeLayout>
+   
+<!-- 菜单栏 -->
+<GridView 
+    android:id="@+id/grd_main"
+     android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:numColumns="3"    
+    ></GridView>
+
+</LinearLayout>

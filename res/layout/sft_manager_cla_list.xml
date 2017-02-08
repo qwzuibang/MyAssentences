@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    <TextView 
+        android:id="@+id/text_sft_manager_cla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所有软件"
+        android:textSize="30dp"
+        android:paddingLeft="20dp"
+        />
+<ImageView 
+    android:id="@+id/img_sft_cla"
+  android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_arrows_right"
+    android:layout_alignParentRight="true"
+    android:paddingRight="30dp"
+  
+    />
+</RelativeLayout>

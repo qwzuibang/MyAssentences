@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_mina_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launchabc" />
+
+    <TextView
+        android:id="@+id/txt_mina_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.07"
+        android:gravity="center_horizontal"
+        android:text="安卓管家"
+        android:textSize="24dp" />
+
+        <ImageView 
+          android:id="@+id/img_mina_set"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_child_configs"
+     
+        />
+           
+</LinearLayout>

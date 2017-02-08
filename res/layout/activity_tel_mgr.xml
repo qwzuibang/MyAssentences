@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxkj.assitance.main.TelMgrActivity" 
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar"
+           />
+    <GridView 
+        android:id="@+id/grd_tel_main_menu"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="2dp"
+         android:verticalSpacing="2dp"
+        
+        ></GridView>
+
+</LinearLayout>

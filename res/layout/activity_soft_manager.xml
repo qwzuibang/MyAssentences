@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxkj.assitance.SoftManagerActivity" 
+    android:orientation="vertical">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       layout="@layout/title_bar"
+     
+        />
+ <RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="150dp"   
+     android:background="#ff8c00"
+     android:gravity="center"
+     >
+      <com.zxkj.assitance.view.SftMngCricleView
+    android:id="@+id/sft_view_cricle"
+    android:layout_width="100dp"
+    android:layout_height="100dp" 
+       />  
+     <View 
+         android:id="@+id/view_sft_inIntel"
+         android:layout_width="15dp"
+         android:layout_height="15dp"
+         android:background="#0000ff"
+       android:layout_toRightOf="@+id/sft_view_cricle"
+       android:layout_marginTop="30dp"
+       android:layout_marginLeft="30dp"
+       
+         />
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机内置空间"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/view_sft_inIntel"
+          android:layout_marginTop="30dp"
+           android:layout_marginLeft="10dp"
+         />
+      <View 
+           android:id="@+id/view_sft_outIntel"
+         android:layout_width="15dp"
+         android:layout_height="15dp"
+         android:background="#28ff28"
+         android:layout_toRightOf="@+id/sft_view_cricle"
+       android:layout_marginTop="60dp"
+       android:layout_marginLeft="30dp"
+         />
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机外置空间"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/view_sft_outIntel"
+          android:layout_marginTop="60dp"
+           android:layout_marginLeft="10dp"
+         />
+ </RelativeLayout>   
+<RelativeLayout 
+     android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    >
+    <TextView 
+        android:id="@+id/text_soft_neizhi"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机内置空间"
+        android:textSize="15dp"
+         android:layout_marginLeft="10dp"
+    />
+<ProgressBar 
+   
+    android:id="@+id/progess_bar_sft_in"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:max="100"
+    android:progress="50"
+     android:progressDrawable="@drawable/layer_list_progess_bar_sft"
+     android:layout_below="@+id/text_soft_neizhi"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/progess_bar_sft_in"
+      android:layout_alignRight="@+id/progess_bar_sft_in"
+     >
+<TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="已用："
+      android:textSize="15dp"    
+    />
+<TextView 
+      android:id="@+id/text_in_used_instal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1.91G"
+      android:textSize="15dp"    
+    />
+<TextView 
+    
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="/"
+      android:textSize="15dp"    
+    />
+<TextView 
+      android:id="@+id/text_in_total_instal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2.77G"
+      android:textSize="15dp"    
+    />
+
+</LinearLayout>
+</RelativeLayout>
+   
+
+<RelativeLayout 
+     android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    >
+    <TextView 
+        android:id="@+id/text_soft_waizhi"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机外置空间"
+        android:textSize="15dp"
+         android:layout_marginLeft="10dp"
+    />
+<ProgressBar 
+   
+    android:id="@+id/progess_bar_sft_out"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:max="100"
+    android:progress="50"
+     android:progressDrawable="@drawable/layer_list_progess_bar_sft"
+     android:layout_below="@+id/text_soft_waizhi"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/progess_bar_sft_out"
+      android:layout_alignRight="@+id/progess_bar_sft_out"
+     >
+<TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="已用："
+      android:textSize="15dp"    
+    />
+<TextView 
+      android:id="@+id/text_out_used_instal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1.91G"
+      android:textSize="15dp"    
+    />
+<TextView 
+    
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="/"
+      android:textSize="15dp"    
+    />
+<TextView 
+      android:id="@+id/text_out_total_instal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2.77G"
+      android:textSize="15dp"    
+    />
+
+</LinearLayout>
+</RelativeLayout>
+    
+   
+    <ListView 
+        android:id="@+id/list_view_sft_manager"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        ></ListView>
+</LinearLayout>

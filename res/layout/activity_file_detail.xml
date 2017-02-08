@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+ 
+    tools:context="com.zxkj.assitance.main.FileDetailActivity" >
+
+    <include
+        android:id="@+id/title_file_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar"
+         />
+  <LinearLayout 
+      android:id="@+id/line_file_detail"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"  
+    android:layout_below="@+id/title_file_detail"
+      >
+      <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="文件数量："
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+          />
+      <TextView 
+          android:id="@+id/text_feil_detail_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="3个"
+        android:textColor="#ff8c00"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        
+          />
+      <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="占用空间:"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+          />
+      <TextView 
+          android:id="@+id/text_feil_detail_mum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="32M"
+          android:textColor="#ff8c00"
+          android:textSize="25dp"
+            android:textStyle="italic"
+          />
+  </LinearLayout>
+  <ListView 
+      android:id="@+id/list_file_detail"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/line_file_detail"
+      > 
+  </ListView>
+  
+<Button 
+    android:id="@+id/button_file_detail"
+     android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="删除所选文件"  
+        android:textColor="#ffffff"
+       android:layout_alignParentBottom="true"
+       android:background="#009ecc"
+       android:textSize="20dp"
+    />
+</RelativeLayout>

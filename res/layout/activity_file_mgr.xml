@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxkj.assitance.main.FileMgrActivity" 
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       layout="@layout/title_bar"
+        />
+    <RelativeLayout       
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#1122cc"
+        >
+        <TextView
+            android:id="@+id/text_file_total_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.31G"      
+            android:textStyle="italic|bold"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"      
+            />
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发现" 
+            android:textSize="20dp"                
+            android:textColor="#ffffff"
+            android:layout_toLeftOf="@+id/text_file_total_menu"      
+            android:layout_alignBottom="@+id/text_file_total_menu"
+            android:paddingBottom="6dp"
+            />
+      
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/list_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+        ></ListView>
+
+</LinearLayout>

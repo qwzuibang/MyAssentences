@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+  >
+    <TextView 
+        android:id="@+id/text_set_item"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="手机管理"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        
+        
+        />
+<RelativeLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="15dp"
+      
+    >
+       <ImageView
+        android:id="@+id/img_set_on"
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/check_switch_on"
+     android:layout_alignParentRight="true"></ImageView>  
+     
+    <ImageView
+        android:id="@+id/img_set_off"
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/check_switch_off"
+    android:layout_alignParentRight="true"></ImageView>   
+      <ImageView
+        android:id="@+id/img_set_item"
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_arrows_right"
+     android:layout_alignParentRight="true"></ImageView>  
+</RelativeLayout>
+  
+</LinearLayout>

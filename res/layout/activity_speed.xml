@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxkj.assitance.SpeedActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+        >   
+        <ImageView 
+            android:id="@+id/img_spd_clean"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"   
+            android:src="@drawable/btn_homeasup_default"
+            />
+        <TextView 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"   
+            android:text="设置"
+            android:textSize="25dp"
+             android:layout_weight="1"
+             android:gravity="center_horizontal"
+            />
+           <ImageView 
+       
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_child_configs"
+          android:visibility="invisible"
+        />     
+    </LinearLayout>
+<TextView 
+    android:id="@+id/text_spd_dev_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="NUBIA"
+    android:layout_gravity="center_horizontal"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    />
+<TextView 
+      android:id="@+id/text_spd_dev_version"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="nx529J Android5.11"
+    android:layout_gravity="center_horizontal"
+    android:textSize="15dp"
+    />
+<RelativeLayout 
+     android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    >
+<ProgressBar 
+   
+    android:id="@+id/pgb_spd_run_mum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:max="100"
+    android:progress="50"
+     android:progressDrawable="@drawable/layer_list_progess_bar_sft"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/pgb_spd_run_mum"
+      android:layout_alignRight="@+id/pgb_spd_run_mum"
+     >
+<TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="已用内存："
+      android:textSize="15dp"    
+    />
+<TextView 
+      android:id="@+id/text_spd_used_mum"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1.91G"
+      android:textSize="15dp"    
+    />
+<TextView 
+    
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="/"
+      android:textSize="15dp"    
+    />
+<TextView 
+      android:id="@+id/text_spd_total_mum"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2.77G"
+      android:textSize="15dp"    
+    />
+
+</LinearLayout>
+</RelativeLayout>
+<Button 
+      android:id="@+id/button_spd_clean"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="一键清理"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+    />
+<ListView 
+ 
+    android:id="@+id/list_spd_clean"
+    android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:layout_weight="1"
+    ></ListView>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"   
+         >
+
+        <CheckBox
+            android:id="@+id/check_spd_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+</CheckBox>
+        <Button
+             android:id="@+id/button_spd_system_progress"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:text="显示系统进程"        
+               android:layout_weight="1"
+               android:gravity="center"
+               android:textSize="20dp"
+             />
+        </LinearLayout>
+</LinearLayout>
